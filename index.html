@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="./script.js" defer></script>
+
+  <!-- GOOGLE FONTS "EPILOGUE" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    
+  <!---------------------- NAVBAR ------------------------>
+  <nav class="navbar">
+    <div class="row">
+      <div class="navbar__row">
+        <img src="./images/logo.svg" alt="logo" class="logo">
+        <button class="dropdown__menu open" id="dropdown__menu__open">
+          <img src="./images/icon-menu.svg" alt="menu icon" class="mobile">
+        </button>
+        <button class="dropdown__menu close hide" id="dropdown__menu__close">
+          <img src="./images/icon-close-menu.svg" alt="menu icon" class="mobile">
+        </button>
+      </div>
+      <div class="left hide" id="left">
+        <div class="left__navbar">
+          <ul class="navbar__list ">
+            <li>
+              <div id="features__menu">
+                <input type="button" value="Features" class="btn list__elements">
+                <img src="./images/icon-arrow-down.svg" alt="dop down menu open" class="dropdown">
+              </div>
+              <ul class="hidden__list features__list" id="features__list">
+                <li class="hidden__elements features__elements">
+                  <img src="./images/icon-todo.svg" alt="todo list icon" class="features__icon">
+                  Todo List
+                </li>
+                <li class="hidden__elements features__elements">
+                  <img src="./images/icon-calendar.svg" alt="calendar icon" class="features__icon">
+                  Calendar
+                </li>
+                <li class="hidden__elements features__elements">
+                  <img src="./images/icon-reminders.svg" alt="reminders icon" class="features__icon">
+                  Reminders
+                </li>
+                <li class="hidden__elements features__elements">
+                  <img src="./images/icon-planning.svg" alt="planing icon" class="features__icon">
+                  Planning
+                </li>
+              </ul>
+            </li>
+            <li> 
+              <div id="company__dropdown" class="company__dropdown">
+                <input type="button" value="Company" class="btn list__elements">
+                <img src="./images/icon-arrow-down.svg" alt="dop down menu open">
+              </div>
+              <ul class="company__list hidden__list" id="company__list">
+                <li class="company__elements hidden__elements">
+                  History
+                </li>
+                <li class="company__elements hidden__elements">
+                  Our Team
+                </li>
+                <li class="company__elements hidden__elements">
+                  Blog
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>Careers</p>
+            </li>
+            <li>
+              <a href="#" rel="noopener noreferrer" class="list__elements">
+                About
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="right__navbar">
+          <ul class="navbar__list">
+            <li>
+              <input type="button" value="login" class="btn list__elements">
+            </li>
+            <li class="btn__mobile">
+              <input type="button" value="SignUp" class="btn btn__outlined">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!---------------------------------- MAIN CONTENT ---------------------------------->
+
+  <main>
+    <div class="row__main">
+      <img src="./images/image-hero-mobile.png" alt="image hero" class="hero__image mobile">
+      <div class="main__content">
+        <h1 class="heading">Make <br> remote work</h1>
+        <p>Get your team in sync, no matter your location.</p>
+        <p>Streamline processes, create team rituals, and <br> watch productivity soar.</p>
+        <input type="button" value="Learn more" class="btn btn__fill">
+
+        <div class="logos">
+          <img src="./images/client-databiz.svg" alt="databiz logo">
+          <img src="./images/client-audiophile.svg" alt="ausiophile logo">
+          <img src="./images/client-meet.svg" alt="meet logo">
+          <img src="./images/client-maker.svg" alt="maker logo">
+        </div>
+      </div>
+      <img src="./images/image-hero-desktop.png" alt="image hero" class="hero__image desktop">
+    </div>
+
+  </main>
+
+  <!-- Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+
+  Learn more -->
+  
+  </div>
+</body>
+</html>
